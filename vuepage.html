@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules/vue/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="reactvue">
+
+        <H1>The name for my restaurant is {{ restaurantName }}</H1>
+
+        <h2>Tarif for our restaurant</h2>
+        <p>BreakFast {{breakfast }}Rwf</p>
+        <p>Lunch {{lunch}} Rwf</p>
+        <p>Dinner {{dinner}} Rwf</p>
+        <p>The Total amount {{totAmount}}</p>
+    </div>
+    <script src="vuetest.js"></script>
+    <script>
+        const test=app.mount('#reactvue')
+    </script>
+</body>
+</html>

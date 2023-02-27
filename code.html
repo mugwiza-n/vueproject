@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules/vue/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0px;
+            font-family: tahoma;
+            color: black;
+        }
+
+        .button {
+            margin: 30px;
+            background-color: aquamarine;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 160px;
+            height: 60px;
+            color: aliceblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #nav {
+            background-color: azure;
+            display: flex;
+            padding: 50px;
+        }
+
+        #leftpanel {
+            background-color: darkcyan;
+            border: aqua;
+            border-color: black;
+            border-width: 2em;
+            border-style: solid;
+
+        }
+
+        #main {
+            position: absolute;
+            left: 22em;
+            top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="app">
+            <div id="leftpanel">
+                <img src="" alt="">
+            </div>
+            <div id="main">
+                <h1>{{greeting}}</h1>
+                <p>{{cart}}</p>
+                <p>
+                <h2>{{product}}</h2>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    cart: 0,
+                    greeting: 'Hellow Vue',
+                    product: 'Sandals',
+                }
+            }
+        })
+    </script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>
